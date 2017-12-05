@@ -19,8 +19,8 @@ sudo apt-get install -y docker-ce;
 echo "$(tput setaf 2)[Verifying DOCKER Service Status $(tput setaf 1)(PRESS 'Q' TO CONTINUE)]...$(tput sgr0)";
 sudo systemctl status docker;
 
-echo "$(tput setaf 2)[ADDING User (rt) to DOCKER Group]...$(tput sgr0)";
-sudo usermod -aG docker mav3rick;
+echo "$(tput setaf 2)[ADDING User to DOCKER Group]...$(tput sgr0)";
+sudo usermod -aG docker mav3rick; #[MODIFY... WITH YOUR USERNAME!!!]
 
 echo "$(tput setaf 2)[PULLING TEST DOCKER IMAGE]...$(tput sgr0)";
 sudo docker pull hello-world;
